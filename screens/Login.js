@@ -41,7 +41,20 @@ export default class LoginScreen extends Component {
           </View>
           <View style={styles.lowerContainer}>
           
-            
+            <TextInput
+              style={styles.textinput}
+              onChangeText={text => this.setState({ email: text })}
+              placeholder={"Enter Email"}
+              placeholderTextColor={"#FFFFFF"}
+              autoFocus
+            />
+            <TextInput
+              style={[styles.textinput, { marginTop: 20 }]}
+              onChangeText={text => this.setState({ password: text })}
+              placeholder={"Enter Password"}
+              placeholderTextColor={"#FFFFFF"}
+              secureTextEntry
+            />
             
             
             
